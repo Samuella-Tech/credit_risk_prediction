@@ -11,7 +11,16 @@ warnings.filterwarnings("ignore")
 # Title and description
 st.set_page_config(page_title="Credit Risk Dashboard", layout="wide")
 st.title("📊 Credit Risk Prediction Dashboard")
-st.markdown("AI-powered insights for Ghanaian microfinance institutions. Upload borrower data to assess risk levels and guide lending decisions.")
+st.markdown("""
+**Welcome!**  
+This dashboard helps microfinance teams assess borrower risk and repayment likelihood using uploaded data.
+
+**To get started:**  
+Upload a CSV file containing borrower details such as `age`, `loan_amount`, `repayment_status`, and more.  
+The dashboard will generate visual insights to support inclusive, data-driven lending decisions.
+
+Upload borrower data to assess risk levels and guide lending strategies with confidence.
+""")
 
 # File upload
 uploaded_file = st.file_uploader("Upload borrower data (.csv)", type=["csv"])
